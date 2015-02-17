@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'test';
+  src:
+    url('Cantarell-Bold.ttf');
+}
+
 body{
   background-color:#555;
 }
@@ -8,7 +14,7 @@ body{
 }
 
 .header H1{
-  font-family: 'Open Sans', sans-serif;
+  font-family: test;
   text-align:center;
   color:#333;
 
