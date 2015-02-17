@@ -9,10 +9,10 @@
   </head>
   <body>
     <div class="header">
-      <a href="index.php"><h1>Hello1</h1></a>
+      <a href="index.php"><h1>Hello2</h1></a>
     </div>
     <div class="body">
-      <span class="test"><a href="second.php">to the second</a></span>
+      <span class="test"><a href="index.php">to the first</a></span>
       <img src="http://www.web3d.org/x3d/content/examples/HelloWorld.tall.png" />
     </div>
     <div class="footer">
@@ -20,7 +20,7 @@
         <tr>
           <td>1</td>
           <td>2</td>
-        </td>
+        </tr>
         <tr>
           <td>3</td>
           <td>4</td>

@@ -1,0 +1,61 @@
+body{
+  background-color:#555;
+}
+
+.header{
+  background-color:#ffd999;
+  padding:1px;
+}
+
+.header H1{
+  font-family: 'Open Sans', sans-serif;
+  text-align:center;
+  color:#333;
+
+  font-size:6em;
+}
+
+.header H1:hover{
+      text-decoration: underline;
+  color:#888;
+}
+
+.body{
+  background-color:#222;
+}
+
+.body .test a{
+  position:absolute;
+  right:10px;
+  color:#bbb;
+}
+
+.body img{
+display:inline-block;
+}
+
+.body .test a:hover{
+  right:20px;
+}
+
+
+.footer{
+  background-color:#555;
+}
+
+.footer table{
+  padding:5px;
+  margin:0 auto;
+}
+
+.footer table td{
+  text-align:center;
+  padding:10px;
+  background-color:#999;
+  width:30px
+}
+
+.footer table td:hover{
+  background-color:#fff;
+
+}
