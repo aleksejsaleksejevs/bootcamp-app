@@ -13,7 +13,9 @@
     </div>
     <div class="body">
       <span class="test"><a href="index.php">to the first</a></span>
-      <img src="http://www.web3d.org/x3d/content/examples/HelloWorld.tall.png" />
+      <?php
+      require 'test.php';
+      //include 'index.php'; ?>
     </div>
     <div class="footer">
       <table>

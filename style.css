@@ -27,18 +27,30 @@ body{
 }
 
 .body{
-  background-color:#222;
+  height:auto;
+  background-color:#bbb;
 }
 
 .body .test a{
   position:absolute;
   right:10px;
-  color:#bbb;
+  color:#999;
 }
 
-.body img{
-display:inline-block;
+.right-side{
+  text-align:center;
 }
+
+.left-side{
+
+
+}
+
+.body form{
+  color:white;
+}
+
+
 
 .body .test a:hover{
   right:20px;

@@ -63,6 +63,3 @@ switch ($r) {
     default:
         echo "something else";
 }
-
-require 'index.php';
-//include 'index.php';
