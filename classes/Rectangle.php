@@ -2,9 +2,10 @@
 
 namespace Bootcamp\Demo;
 
-class Rectangle extends Shape{
-  public $width;
-  public $height;
+class Rectangle extends Shape
+{
+    public $width;
+    public $height;
 
  /**
   *Creates an Rectangle instance
@@ -12,12 +13,14 @@ class Rectangle extends Shape{
   *@param $height Rectangle height
   *@return float Rectangle area
   */
-  public function __construct($w, $h){
-    $this->width = $w;
-    $this->height = $h;
-  }
+    public function __construct($w, $h)
+    {
+        $this->width = $w;
+        $this->height = $h;
+    }
 
-  public function getArea(){
-      return ($this->width)*($this->height);
-  }
+    public function getArea()
+    {
+        return ($this->width)*($this->height);
+    }
 }

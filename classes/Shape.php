@@ -2,11 +2,12 @@
 
 namespace Bootcamp\Demo;
 
-  abstract class Shape{
+abstract class Shape
+{
 
-    /**
-    *Return an area of a shape
-    *@return float shape area.
-    */
-    public abstract function getArea();
-  }
+  /**
+  *Return an area of a shape
+  *@return float shape area.
+  */
+    abstract public function getArea();
+}
