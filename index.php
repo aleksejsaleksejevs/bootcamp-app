@@ -1,20 +1,19 @@
 <?php
 
-use \Bootcamp\Demo\Rectangle;
-use \Bootcamp\Demo\Circle;
+require __DIR__.'/vendor/autoload.php';
 
-require 'vendor/autoload.php';
+use Bootcamp\Demo\Storage\Controller;
+use Bootcamp\Demo\Storage\FileStorage;
 
-$app = new Silex\Application();
+$app = new Silex\Application;
 
-$app->get('/hello/{name}', function ($name) use ($app) {
-  return 'Hello '.$app->escape($name);
-});
+$app->get('/', function () use ($app) {
+  $storage = new FileStorage();
+  $c = new Controller($storage);
 
-$app->get('/rectangle', function (){
-  $rectangle = new Rectangle(2,3);
-  $circle = new Circle(1);
-  return ($rectangle->getArea().' and '.$circle->getArea());
+  return true;
+
+  run_dump($storage);
 });
 
 $app->run();

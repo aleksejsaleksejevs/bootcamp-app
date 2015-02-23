@@ -5,33 +5,34 @@ namespace Bootcamp\Demo\Quiz;
 class Question{
     /**
     *Holds options
-    *@var int
-    *@var array
-    *@var string
-    *@var type
+    *@param int
+    *@param array
+    *@param string
+    *@param type
     */
     private $id;
     private $options;
     private $title;
     private $type;
 
+
     public function __construct($title){
         $this->title = $title;
+        $this->option = [];
     }
 
     public function addOption(Option $option){
-        $this->options[] = $option;
+        $correctAnswerCount = 0;
+        if(true===$option->isCorrect())
+        {
+            $this->correctAnswerCount++;
+        }
     }
 
     public function isMultiAnswer(){
-        $count = 0;
-        foreach($this->options as $option){
-            if($option->isCorrect()===true){
-                $count++;
-            }
-            if($count>1){
-                return true;
-            }
+        if($this->correctAnswerCount > 1)
+        {
+            return true;
         }
         return false;
     }
