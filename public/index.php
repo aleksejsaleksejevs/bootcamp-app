@@ -16,7 +16,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body ng-app>
       <nav class="navbar navbar-inverse">
           <div class="container">
             <div class="navbar-header">
@@ -41,8 +41,10 @@
         <div class="container">
 
           <div class="starter-template">
-            <h1>Bootstrap starter template</h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+            <input type="text" ng-model="name" placeholder="your name here"/><br>
+            <input type="number" ng-model="number1" placeholder="number1"/><br>
+            <input type="number" ng-model="number2" placeholder="number2"/>
+            <h2>Hello {{name}}, let's do a math!<br> {{number1}} + {{number1}} * {{number2}} = {{number1+number1*number2}}</h2>
           </div>
 
         </div><!-- /.container -->

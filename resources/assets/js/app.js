@@ -1,2 +1,3 @@
-
-require('./myModule');
+var angular = require('angular')
+//
+// require('./myModule');
